@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Encriptador sencillo hecho con JavaScript">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Encriptador">
+    <meta name="author" content="Junior Salvador">
+    <meta name="robots" content="index"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador JavaScript | Junior Salvador</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="contenedor__input">
+            <textarea id="inputTexto" placeholder="Ingrese el texto aquí..."></textarea>
+            <p class="contenedor__input__info">¡Solo letras minúsculas y sin tildes!</p>
+            <div class="contenedor__input__botones">
+                <button class="boton__encriptar" onclick="procesarTexto('encriptar')">Encriptar</button>
+                <button class="boton__desencriptar" onclick="procesarTexto('desencriptar')">Desencriptar</button>
+            </div>
+        </div>
+        <div class="contenedor__output">
+            <div id="outputTexto" class="contenedor__output__mensaje">
+                <img src="./assets/no-message-image.png" alt="Sin texto ingresado" />
+                <p class="contenedor__output__info">Ningún mensaje fue encontrado</p>
+                <p class="contenedor__output__infomin">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="contenedor__output__botones">
+                <button id="copiarTexto" class="boton__copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
